@@ -976,7 +976,8 @@
                 <&macro_press>,
                 <&kp LCTRL &kp LWIN &kp LEFT_ARROW>,
                 <&macro_pause_for_release>,
-                <&macro_release>;
+                <&macro_release>,
+                <&kp LEFT_ARROW &kp LWIN &kp LCTRL>;
 
             label = "M_DSKTP_LEFT";
         };
