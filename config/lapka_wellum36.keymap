@@ -1363,7 +1363,7 @@
   &kp Q            &hlt 6 W     &kp E         &hlt 6 R      &kp T                           &kp Y    &kp U         &kp I         &kp O        &kp P
   &hml LEFT_WIN A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G                           &lt 8 H  &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI
   &hlt 10 Z        &kp X        &hlt 8 C      &kp V         &kp B                           &kp N    &kp M         &kp COMMA     &kp DOT      &kp FSLH
-                                              &lt 3 SPACE   &mo 11  &m_dsktp_left    &none  &mo 11   &m_to_ru
+                                              &lt 3 SPACE   &mo 11  &m_dsktp_left    &m_dsktp_right  &mo 11   &m_to_ru
             >;
 
             display-name = "EN";
