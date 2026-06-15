@@ -968,6 +968,18 @@
 
             label = "M_HANDY";
         };
+
+        m_dsktp_left: m_dsktp_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LWIN &kp LEFT_ARROW>,
+                <&macro_pause_for_release>,
+                <&macro_release>;
+
+            label = "M_DSKTP_LEFT";
+        };
     };
 
     combos {
@@ -1334,10 +1346,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &kp Q            &hlt 6 W     &kp E         &hlt 6 R      &kp T                      &kp Y    &kp U         &kp I         &kp O        &kp P
-  &hml LEFT_WIN A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G                      &lt 8 H  &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI
-  &hlt 10 Z        &kp X        &hlt 8 C      &kp V         &kp B                      &kp N    &kp M         &kp COMMA     &kp DOT      &kp FSLH
-                                              &lt 3 SPACE   &mo 11  &m_to_ru    &none  &mo 11   &m_to_ru
+  &kp Q            &hlt 6 W     &kp E         &hlt 6 R      &kp T                           &kp Y    &kp U         &kp I         &kp O        &kp P
+  &hml LEFT_WIN A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G                           &lt 8 H  &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI
+  &hlt 10 Z        &kp X        &hlt 8 C      &kp V         &kp B                           &kp N    &kp M         &kp COMMA     &kp DOT      &kp FSLH
+                                              &lt 3 SPACE   &mo 11  &m_dsktp_left    &none  &mo 11   &m_to_ru
             >;
 
             display-name = "EN";
