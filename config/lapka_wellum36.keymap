@@ -1396,7 +1396,7 @@
   &tog 11       &m_warpd_hint  &kp ESCAPE  &key_repeat  &kp CAPS                                         &kp INS    &kp HOME       &kp PG_UP  &kp PG_DN  &kp END
   &kp LEFT_GUI  &kp LALT       &kp LCTRL   &kp LSHFT    &swap_win                                        &kp TAB    &kp LEFT       &kp UP     &kp DOWN   &kp RIGHT
   &kp LC(Z)     &kp LC(X)      &kp LC(C)   &kp LC(V)    &swap_tab                                        &kp SPACE  &kp BACKSPACE  &kp RET    &kp DEL    &kp ESC
-                                           &none        &macro_mod_off  &m_dsktp_left    &m_dsktp_right  &m_handy   &none
+                                           &none        &macro_mod_off  &m_dsktp_right    &m_dsktp_left  &m_handy   &none
             >;
 
             display-name = "NAV";
