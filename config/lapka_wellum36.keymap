@@ -441,6 +441,13 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        td_enable_nav: td_enable_nav {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_ENABLE_NAV";
+            #binding-cells = <0>;
+            bindings = <&lt 3 SPACE>, <&tog 3>;
+        };
     };
 
     macros {
@@ -1360,10 +1367,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &kp Q            &hlt 6 W     &kp E         &hlt 6 R      &kp T                                    &kp Y    &kp U         &kp I         &kp O        &kp P
-  &hml LEFT_WIN A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G                                    &lt 8 H  &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI
-  &hlt 10 Z        &kp X        &hlt 8 C      &kp V         &kp B                                    &kp N    &kp M         &kp COMMA     &kp DOT      &kp FSLH
-                                              &lt 3 SPACE   &mo 11  &m_dsktp_left    &m_dsktp_right  &mo 11   &m_to_ru
+  &kp Q            &hlt 6 W     &kp E         &hlt 6 R        &kp T                                    &kp Y    &kp U         &kp I         &kp O        &kp P
+  &hml LEFT_WIN A  &hml LALT S  &hml LCTRL D  &hml LSHFT F    &kp G                                    &lt 8 H  &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI
+  &hlt 10 Z        &kp X        &hlt 8 C      &kp V           &kp B                                    &kp N    &kp M         &kp COMMA     &kp DOT      &kp FSLH
+                                              &td_enable_nav  &mo 11  &m_dsktp_left    &m_dsktp_right  &mo 11   &m_to_ru
             >;
 
             display-name = "EN";
@@ -1396,7 +1403,7 @@
   &tog 11       &m_warpd_hint  &kp ESCAPE  &key_repeat  &kp CAPS                                         &kp INS    &kp HOME       &kp PG_UP  &kp PG_DN  &kp END
   &kp LEFT_GUI  &kp LALT       &kp LCTRL   &kp LSHFT    &swap_win                                        &kp TAB    &kp LEFT       &kp UP     &kp DOWN   &kp RIGHT
   &kp LC(Z)     &kp LC(X)      &kp LC(C)   &kp LC(V)    &swap_tab                                        &kp SPACE  &kp BACKSPACE  &kp RET    &kp DEL    &kp ESC
-                                           &none        &macro_mod_off  &m_dsktp_right    &m_dsktp_left  &m_handy   &none
+                                           &tog 3       &macro_mod_off  &m_dsktp_right    &m_dsktp_left  &m_handy   &none
             >;
 
             display-name = "NAV";
