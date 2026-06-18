@@ -447,8 +447,6 @@
             label = "TD_ENABLE_NAV";
             #binding-cells = <0>;
             bindings = <&lt 3 SPACE>, <&tog 3>;
-
-            tapping-term-ms = <150>;
         };
     };
 
